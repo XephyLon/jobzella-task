@@ -1,0 +1,27 @@
+<div class="container bg-[#F9F9F9] rounded-lg p-3">
+    <div class="title text-lg font-bold text-[#0D062D] font-sans">
+        UI/UX Design
+    </div>
+    <div class="subtitle text-xs font-sans text-[#787486]">
+        Brainstorming brings team members' diverse experience into play.
+    </div>
+    <div class="dot-menu text-[#00587A] text-sm font-bold"><button class="w-4 h-4">...</button></div>
+    <div class="date bg-[#5AC3DD33] text-urlcyan h-6 w-14 text-xs flex items-center justify-center rounded-md"><i
+            class="inline-block mr-[2px]"><img src="assets/clock.svg"></i> 5 May</div>
+            
+    <!-- This alone would need an extra subcomponent to handle the logic for fetching the collaboratos' profile pictures. -->
+    <div class="collaborators flex gap-[-4px]">
+        <img class="w-5 h-5" src="assets/pfp.png">
+        <img class="w-5 h-5" src="assets/pfp2.png">
+        <img class="w-5 h-5" src="assets/pfp3.png">
+    </div>
+    <div class="attachments">
+        <a href="#" class="text-[#787486] text-xs flex items-center gap-1">
+            <i class="inline-block"><img src="assets/file.svg"></i> 0 Files
+        </a>
+    </div>
+    <div class="progress-bar">
+        <jobzella-progress-bar [rating]="false" [color]="color" [progress]="progress" />
+    </div>
+
+</div>

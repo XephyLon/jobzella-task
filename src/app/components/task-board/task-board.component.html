@@ -1,0 +1,18 @@
+<section class="flex flex-col w-full h-full gap-2 p-5 bg-white rounded-lg">
+    <h2 class="flex font-sans text-xs font-bold">
+        <span [style]="'background-color: ' + accentColor"
+            class="w-1.5 h-1.5 inline-block rounded-full mr-1.5 self-center"></span><ng-content></ng-content>
+    </h2>
+    <hr [style]="'border-color: ' + accentColor" class="mt-4 border-2 rounded-lg mb-7">
+
+    <!-- NOTE: In a real-world application, this would be rendered using `*ngFor`. I'm only doing this for the sake of testing the style with multiple cards -->
+    <jobzella-task-card [color]="accentColor" progress="50"
+        subtitle="Brainstorming brings team members' diverse experience into play.">UI/UX Design</jobzella-task-card>
+    <jobzella-task-card [color]="accentColor" progress="40"
+        subtitle="Brainstorming brings team members' diverse experience into play.">UI/UX Design</jobzella-task-card>
+    <jobzella-task-card [color]="accentColor" progress="70"
+        subtitle="Brainstorming brings team members' diverse experience into play.">UI/UX Design</jobzella-task-card>
+
+    <button class="flex items-center justify-center w-full bg-white border-2 border-dashed rounded-lg border-p h-14"><i><img
+                src="assets/add-p.svg"></i></button>
+</section>

@@ -1,0 +1,36 @@
+<aside class="flex flex-col items-center h-full w-[287px]">
+    <img class="w-[200px] mt-[30px] mb-12 " src="assets/logo-2.svg" alt="Logo">
+
+    <div class="flex flex-col w-[200px]">
+        <p class="text-xs uppercase text-[#373F51]">Groups</p>
+        <button class="sidemenu-btn">
+            <i>
+                <img src="assets/design.svg" alt="Design">
+            </i>
+            Design
+        </button>
+        <button class="sidemenu-btn">
+            <i>
+                <img src="assets/development.svg" alt="Development">
+            </i>
+            Development
+        </button>
+        <button class="sidemenu-btn">
+            <i>
+                <img src="assets/marketing.svg" alt="Marketing">
+            </i>
+            Marketing
+        </button>
+        <button class="sidemenu-btn">
+            <i>
+                <img src="assets/requirements.svg" alt="Requirements">
+            </i>
+            Requirements
+        </button>
+
+        <button (click)="addGroup()" class="btn mt-3 h-[44px] rounded-2xl">
+            <i><img src="assets/add.svg"></i>
+            Add Group
+        </button>
+    </div>
+</aside>

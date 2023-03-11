@@ -1,0 +1,29 @@
+<section class="bg-[#f3f3f3] h-full w-full flex flex-row ">
+    <!-- Side menu -->
+    <jobzella-sidebar class="sticky" />
+
+    <!-- Top bar -->
+    <div class="flex flex-col w-full">
+        <jobzella-topbar class="sticky" />
+
+        <main class="container bg-[#F5F5F5] h-full mt-10 pl-10 pr-20">
+            <div class="flex justify-between progress-bar">
+                <jobzella-progress-bar class="w-80" progress="50">Task Meter <span
+                        class="text-[#4483F7] font-semibold">25</span>/50</jobzella-progress-bar>
+                <button (click)="addTask()" class="btn rounded-2xl w-52 h-11">
+                    <i><img src="assets/add.svg"></i>
+                    Add Task
+                </button>
+            </div>
+            <div class="todo">
+                <jobzella-task-board accentColor="#973FCF">To Do</jobzella-task-board>
+            </div>
+            <div class="on-progress">
+                <jobzella-task-board accentColor="#FFA500">On Progress</jobzella-task-board>
+            </div>
+            <div class="done">
+                <jobzella-task-board accentColor="#68B266">Done</jobzella-task-board>
+            </div>
+        </main>
+    </div>
+</section>
